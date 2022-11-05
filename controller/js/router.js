@@ -1,4 +1,3 @@
-// console.log(window.location.pathname);
 const route = (e) => {
     e = event;
     e.preventDefault();
