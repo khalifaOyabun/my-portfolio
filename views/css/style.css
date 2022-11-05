@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600&family=Manrope:wght@200;300&family=Righteous&display=swap');
+
+:root {
+    --res: calc(0.01 * 10vmin);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    box-sizing: border-box;
+}
+
+/* header {
+   
+} */
+
+header div.profile-container {
+    height: 400px;
+    width: 400px;
+    /* transform: rotate(-45deg); */
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-top-left-radius: 50%;
+    background-color: #ff7a28;
+    position: absolute;    
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+
+header div.experience {
+    position: absolute;
+    right: 300px;
+    top: 170px;
+    z-index: 1;
+    background-color: #272936;
+    height: 100px;
+    width: 220px;
+    border-radius: 10px;
+}
+
+header div.experience p.yearsOfXp {
+    color: white;
+    padding: 7px 15px 7px;
+    font-size: calc(var(--res) * 50);
+}
+
+header div.experience p.yearsOfXpSt {
+    color: white;
+    font-size: calc(var(--res) * 30);
+    padding: 0 15px 15px 15px;
+}
+
+header img.my-profile {
+    position: absolute;
+    top: 4px;
+    right: 55px;
+    border-bottom-left-radius:47%;
+    border-bottom-right-radius:28%;
+}
+
+
+header nav {
+    /* background-color: antiquewhite; */
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2em;
+    padding-left: 100px;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: bisque; */
+}
+
+header nav ul li {
+    list-style-type: none;
+    margin: 0 2em 0 2em;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+header nav ul li a:hover {
+    color: rgb(152, 151, 151);
+}
+
+header nav ul li a.active {
+    border-bottom: solid 2px #ff7a28;
+    border-bottom-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+}
+
+
+header a.btn {
+    position: absolute;
+    right: 300px;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    background-color: #ff7a28;
+    border-radius: 5px;
+    box-shadow: 7px 4px 5px 2px #bd5311;
+    transform: scale(1);
+    transition: transform .5s;
+}
+
+header a.btn:hover {
+    transform: scale(1.1);
+    transition: transform .5s;
+
+}
+
+header h1.presentation{
+    padding-left: 130px;
+    padding-top: 40px;
+    font-weight: lighter;
+    /* font-family: 'Baloo 2', cursive; */
+    font-family: 'Manrope', sans-serif;
+    /* font-family: 'Righteous', cursive; */
+    font-size: calc(var(--res) * 100);
+}
+
+header h1.presentation strong.myName {
+    word-wrap: break-word;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/views/css/style.css">
+    <title>Khalifa's Portfolio</title>
+</head>
+<body>
+    <header aria-label="navigation" role="navigation" aria-setsize="min-width = 600px">
+        <div class="profile-container"></div>
+        <img class="my-profile" src="/views/img/my-profile.png" alt="my-profile" usemap="#image">
+        <map name="image">
+            <area target="_blank" alt="my-profile" href="./about.html" coords="326,393,323,334,316,311,300,292,283,278,225,245,145,224,128,237,124,238,114,242,106,245,89,253,41,274,16,295,8,306,0,320,0,391" shape="poly">
+            <area target="_blank" alt="my-profile" href="./about.html" coords="221,246,243,214,251,184,254,170,250,153,255,135,253,121,248,102,235,87,225,79,201,72,171,82,157,91,147,107,144,118,142,128,142,148,134,151,132,158,128,167,132,177,137,187,145,190,144,200,145,226" shape="poly">
+        </map>
+        <nav>
+            <ul>
+                <li><a href="/" onclick="route()">Home</a> </li>
+                <li><a href="#portfolio">Portfolio</a> </li>
+                <li><a href="/about" onclick="route()">About Me</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <a href="/hireme" onclick="route()" class="btn">Hire Me</a>
+            
+        </nav>
+
+    <main class="main-page"></mainclass>   
+
+<script src="/controller/js/router.js"></script>
+</body>
+</html>
