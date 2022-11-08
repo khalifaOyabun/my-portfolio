@@ -1,6 +1,6 @@
 // console.log(window.location.pathname);
 const route = (e) => {
-    e = event;
+    // e = event;
     e.preventDefault();
     window.history.pushState({}, "", e.target.href);
     handleLocation();

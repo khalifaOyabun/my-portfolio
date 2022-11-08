@@ -22,28 +22,38 @@ body {
 } */
 
 header div.profile-container {
-    height: 400px;
-    width: 400px;
-    /* transform: rotate(-45deg); */
+    position: absolute;
+    right: 0;
+    height: 600px;
+    width: 600px;
     border-bottom-left-radius: 50%;
     border-bottom-right-radius: 50%;
     border-top-left-radius: 50%;
+    background-image: url("/views/img/my-profile.png");
+    background-position-y: bottom;
     background-color: #ff7a28;
-    position: absolute;    
-    right: 0;
-    top: 0;
-    z-index: -1;
+    background-repeat: no-repeat;
+    object-fit: fill;
 }
 
 header div.experience {
     position: absolute;
-    right: 300px;
-    top: 170px;
+    right: 380px;
+    top: 510px;
     z-index: 1;
-    background-color: #272936;
-    height: 100px;
-    width: 220px;
+    background-color: #272936c1;
+    height: 15qqqsqs0px;
+    width: 370px;
     border-radius: 10px;
+    transform: scale(1);
+    transition: transform .5s;
+}
+
+header div.experience:hover {
+    background-color: #272936;
+    transform: scale(1.1);
+    transition: transform .5s;
+    box-shadow: 5px 5px 5px 5px rgba(11, 11, 11, 0.365);
 }
 
 header div.experience p.yearsOfXp {
@@ -54,16 +64,9 @@ header div.experience p.yearsOfXp {
 
 header div.experience p.yearsOfXpSt {
     color: white;
-    font-size: calc(var(--res) * 30);
+    font-family: 'Baloo 2', sans-serif;
+    font-size: calc(var(--res) * 50);
     padding: 0 15px 15px 15px;
-}
-
-header img.my-profile {
-    position: absolute;
-    top: 4px;
-    right: 55px;
-    border-bottom-left-radius:47%;
-    border-bottom-right-radius:28%;
 }
 
 
@@ -73,6 +76,7 @@ header nav {
     justify-content: space-between;
     padding-top: 2em;
     padding-left: 100px;
+    font-size: calc(var(--res) * 27);
 }
 
 header nav ul {
@@ -98,33 +102,33 @@ header nav ul li a:hover {
 
 header nav ul li a.active {
     border-bottom: solid 2px #ff7a28;
-    border-bottom-left-radius: 20%;
-    border-bottom-right-radius: 20%;
+
 }
 
 
 header a.btn {
     position: absolute;
-    right: 300px;
+    right: 420px;
+    top: 30px;
     padding: 10px;
     text-decoration: none;
     color: white;
-    background-color: #ff7a28;
+    background-color: #ff7a28cf;
     border-radius: 5px;
     box-shadow: 7px 4px 5px 2px #bd5311;
     transform: scale(1);
     transition: transform .5s;
 }
 
-header a.btn:hover {
+header nav a.btn:hover {
     transform: scale(1.1);
     transition: transform .5s;
-
+    background-color: #ff7a28;
 }
 
 header h1.presentation{
-    padding-left: 130px;
-    padding-top: 40px;
+    margin-left: 130px;
+    padding-top: 100px;
     font-weight: lighter;
     /* font-family: 'Baloo 2', cursive; */
     font-family: 'Manrope', sans-serif;
@@ -134,4 +138,56 @@ header h1.presentation{
 
 header h1.presentation strong.myName {
     word-wrap: break-word;
+}
+
+header h2.myRole {
+    margin-left: 130px;
+    font-family: 'Baloo 2', sans-serif;
+    font-weight: lighter;
+}
+
+#html { 
+    grid-area: html;
+    background-color: #b74237;
+}
+
+#css { 
+    background-color: #f88fa4;
+    color: black;
+    grid-area: css;
+}
+
+#php { 
+    grid-area: php;
+    background-color: #e47937;
+    color: black;
+}
+
+#js { 
+    grid-area: js; 
+    background-color: #7d7171;
+}
+
+
+section.mainSkills {
+    margin-left: 130px;
+    padding-top: 100px;
+    padding-bottom: 20px;
+    width: 400px;
+    display: grid;
+    grid-template: 
+    "html css ."
+    "php js js";
+    row-gap: 20px;
+    column-gap: 10px;
+}
+
+section.mainSkills div.skills {
+    font-family: 'Manrope', sans-serif;
+    font-size: calc(var(--res) * 30);
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
 }
